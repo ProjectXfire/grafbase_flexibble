@@ -1,0 +1,34 @@
+.navbar-container {
+  padding: 10px 8px;
+  background-color: var(--bg-color-1);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.navbar__links {
+  display: flex;
+  font-size: 0.9rem;
+  gap: 25px;
+}
+
+.navbar__links ul {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .navbar__links ul {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+}
+
+.navbar__actions {
+  display: flex;
+  gap: 12px;
+}

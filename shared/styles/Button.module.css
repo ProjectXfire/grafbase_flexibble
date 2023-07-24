@@ -1,0 +1,14 @@
+.button {
+  padding: 8px 12px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.full {
+  width: 100%;
+}

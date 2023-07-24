@@ -1,0 +1,28 @@
+.footer-container {
+  padding: 20px 8px;
+  background-color: var(--bg-color-1);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer__heading {
+  max-width: 350px;
+}
+
+.footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer__end {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: var(--color-1);
+}
