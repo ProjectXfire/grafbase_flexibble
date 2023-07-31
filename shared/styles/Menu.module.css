@@ -1,0 +1,24 @@
+.menu {
+  min-width: 230px;
+  display: flex;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.menu-item {
+  cursor: pointer;
+  transition: 100ms all;
+}
+
+.menu-item p {
+  padding: 8px;
+}
+
+.menu-item:hover {
+  background-color: rgb(245, 245, 245);
+}

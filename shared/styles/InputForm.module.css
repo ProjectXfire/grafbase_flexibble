@@ -1,0 +1,99 @@
+.input-group-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.label {
+  position: absolute;
+  top: 17px;
+  left: 12px;
+  font-size: 0.9rem;
+  color: rgb(146, 176, 211);
+  transform: scale(1);
+  transform-origin: 0 0;
+  transition: all 300ms;
+}
+.input {
+  padding: 18px 10px;
+  outline: none;
+  border: none;
+  resize: none;
+  background-color: rgb(241, 244, 255);
+  color: rgb(78, 114, 185);
+}
+
+.input:focus + .label {
+  top: 2px;
+  transform: scale(0.8);
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.select label {
+  color: rgb(78, 114, 185);
+}
+
+.select__button {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(241, 244, 255);
+  color: rgb(78, 114, 185);
+  border: none;
+  border-radius: 8px;
+}
+
+.select__items {
+  position: absolute;
+  max-height: 200px;
+  min-width: 250px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 4px;
+  background-color: rgb(241, 244, 255);
+  overflow: auto;
+}
+
+.select__items button {
+  width: 100%;
+  border: none;
+  text-align: start;
+  background-color: rgb(241, 244, 255);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+}
+
+.select__items button:hover {
+  background-color: rgb(174, 187, 214);
+}
+
+.has-text {
+  top: 2px;
+  transform: scale(0.8);
+}
+
+.text-error {
+  color: var(--alert-color);
+}
+
+.border-error {
+  border: 1px solid var(--alert-color);
+}

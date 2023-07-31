@@ -5,7 +5,9 @@
     'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono',
     'Courier New', monospace;
   --color-1: rgb(184, 184, 184);
+  --color-2: rgb(71, 114, 173);
   --bg-color-1: rgb(238, 244, 250);
+  --alert-color: rgb(212, 47, 47);
 }
 
 * {
@@ -34,4 +36,19 @@ button {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+::-webkit-scrollbar-thumb {
+  background: #0059bf;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
 }

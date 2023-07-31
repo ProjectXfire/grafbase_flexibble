@@ -1,0 +1,12 @@
+.profile-menu {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-menu__action {
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}

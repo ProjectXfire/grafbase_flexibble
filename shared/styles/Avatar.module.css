@@ -1,0 +1,14 @@
+.avatar {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.avatar svg {
+  width: 30px;
+  height: 30px;
+}

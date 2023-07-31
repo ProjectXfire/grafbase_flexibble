@@ -1,7 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Itim } from 'next/font/google';
-import { Navbar, Footer } from '@/shared/components';
+import { Navbar, Footer, Providers } from '@/shared/components';
 
 const itim = Itim({ subsets: ['latin'], weight: '400' });
 
@@ -14,6 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }):
   return (
     <html lang='en'>
       <body className={itim.className}>
+        <Providers />
         <Navbar />
         <main>{children}</main>
         <Footer />

@@ -1,0 +1,19 @@
+.project-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-form__image {
+  position: relative;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed black;
+  cursor: pointer;
+}
+
+.project-form__image label {
+  cursor: pointer;
+}

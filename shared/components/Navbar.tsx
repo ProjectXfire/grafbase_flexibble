@@ -1,11 +1,13 @@
 import styles from '../styles/Navbar.module.css';
 import NextLink from 'next/link';
 import NextImage from 'next/image';
+import { getCurrentUser } from '../lib';
 import { navLinks } from '../constants';
-import { AuthProvider, Avatar, Container } from '.';
+import { AuthProvider, Container, ProfileMenu } from '.';
 
-function Navbar(): JSX.Element {
-  const session = null;
+async function Navbar(): Promise<JSX.Element> {
+  const { data } = await getCurrentUser();
+
   return (
     <div className={styles['navbar-container']}>
       <Container>
@@ -23,11 +25,8 @@ function Navbar(): JSX.Element {
             </ul>
           </div>
           <div className={styles.navbar__actions}>
-            {session ? (
-              <>
-                <Avatar />
-                <NextLink href='/create-project'>Share work</NextLink>
-              </>
+            {data ? (
+              <ProfileMenu avatarUrl={data.user.avatarUrl ?? ''} userId={data.user.id} />
             ) : (
               <AuthProvider />
             )}
